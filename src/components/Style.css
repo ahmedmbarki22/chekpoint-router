@@ -1,0 +1,38 @@
+.nav-container {
+  margin: 0;
+  border: 1px black solid;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  background-color: darkblue;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+.nav-container input {
+  padding: 10px 50px;
+  font-size: 1.1rem;
+  outline: none;
+  border: none;
+  border-radius: 25px;
+}
+.movies-list {
+  min-height: 80vh;
+  padding: 50px 100px;
+}
+.movies-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+.movie-item {
+  width: 32%;
+  box-sizing: border-box;
+  padding: 0px 18px;
+}
+.movie-item-cover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
