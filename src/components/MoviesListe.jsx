@@ -26,6 +26,7 @@ function MoviesListe({ movies, search, rating, setMovies }) {
             }}
           />
           <FormField
+          
             id="form-input-control-last-name"
             control={Input}
             type="number"
@@ -60,7 +61,7 @@ function MoviesListe({ movies, search, rating, setMovies }) {
           .filter((movie) => (rating ? movie.rating === rating : movie))
           .toReversed()
           .map((movie) => (
-            <MovieItem {...movie} />
+            <MovieItem key={movie.id} {...movie} />
           ))}
       </div>
     </div>
